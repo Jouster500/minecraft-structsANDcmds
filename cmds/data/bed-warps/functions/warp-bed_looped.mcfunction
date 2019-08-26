@@ -3,7 +3,7 @@
 # Date: 8/28/2019
 # Warps a player with an activated trigger to their bed
 # #########################################
-# Get any player who recently activated the bed warp trigger scoreboard. (repeater cmd)
+# Get any player who recently activated the bed warp trigger scoreboard. This is the looping function
 data get entity @a[scores={warpBed=1..},limit=1]
 # Summon a succesful entity with a tag specialized to accomadate the function
 summon minecraft:area_effect_cloud ~ ~2 ~ {Tags:["warpBed"]}
