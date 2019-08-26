@@ -5,11 +5,13 @@ As of writing this, code has not been load tested with other
 players, but is optimized for cmd block output should it 
 be placed ingame. 
 
-There are two functions; one that works by adjusting the players
-home positions in scoreboard each time they sleep.
+There are two main functions; one that works by adjusting the players
+home positions in scoreboard each time they sleep (get-bed-cords).
 
 Another works by calling the trigger to activate the players ability
-to warp back to their bed. 
+to warp back to their bed. (warp-bed)
+
+The init function serves to initalize all scoreboards and add all players to them.
 
 Stats:
 -Function1
