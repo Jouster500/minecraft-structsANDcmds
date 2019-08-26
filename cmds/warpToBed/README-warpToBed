@@ -1,0 +1,6 @@
+These commands allow a normal server player to teleport to
+the last bed they slept at. 
+
+As of writing this, code has not been load tested with other
+players, but is optimized for cmd block output should it 
+be placed ingame. 
