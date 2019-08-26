@@ -1,4 +1,14 @@
-# Teleport the recently summoned entity to closest player that slept
+##################################################################################
+# Author: Jouster500
+# Data: 8/28/2019
+# Requires: dummy spawnX, spawnY, spawnZ, and bedSlept pointing to sleep_in_bed stat
+# Gets and stores players recently slept bed cordinates
+###################################################################################
+# Looks for a player that recently slept in a bed. This is the looping function. If in a cmd block
+#scoreboard players get @p[scores={bedSlept=1..},limit=1] bedSlept
+# Summon an entity with the respect tag
+summon minecraft:area_effect_cloud ~ ~5 ~ {Tags:["bedSlept"]}
+# Teleport the recently summoned entity to closest player that slept.
 tp @e[tag=bedSlept,limit=1] @p[scores={bedSlept=1..}]
 # Tell the player who is getting their cords saved
 tell @p[scores={bedSlept=1..}] Your home position is to be saved...
