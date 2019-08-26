@@ -11,9 +11,9 @@ home positions in scoreboard each time they sleep.
 Another works by calling the trigger to activate the players ability
 to warp back to their bed. 
 
-Stats:\\n
+Stats:
 -Function1
---CMDS; 11\n
+--CMDS; 11
 --Unique access to a bed slept counter
 -Function2
 --Cmds; 8
