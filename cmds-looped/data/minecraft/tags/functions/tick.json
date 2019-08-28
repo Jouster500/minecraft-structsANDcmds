@@ -1,5 +1,6 @@
 {
 	"values": [
 		"bed-warps:get-bed-cords", "bed-warps:warp-bed"
+		,"xp-bank:store", "xp-bank:wdraw"
 	]
 }
