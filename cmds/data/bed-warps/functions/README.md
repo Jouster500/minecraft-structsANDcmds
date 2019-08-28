@@ -5,25 +5,13 @@ As of writing this, code has not been load tested with other
 players, but is optimized for cmd block output should it 
 be placed ingame. 
 
-There are two functions; one that works by adjusting the players
-home positions in scoreboard each time they sleep.
+There are two main functions; one that works by adjusting the players
+home positions in scoreboard each time they sleep (get-bed-cords).
 
 Another works by calling the trigger to activate the players ability
-to warp back to their bed. 
+to warp back to their bed. (warp-bed)
 
-Stats:
--Function1
---CMDS; 11
---Unique access to a bed slept counter
--Function2
---Cmds; 8
---Unqiue access to a trigger scoreboard
--Scoreboard Count; 5
---A dummy board to store players bed x position (spawnX)
---A dummy board to store players bed y position (spawnY)
---A dummy board to store players bed z position (spawnZ)
---A scoreboard that gives access to minecraft.custom:sleep_in_bed, or future equivalent. (bedSlept)
---A scoreboard that acts as the trigger for normal players to use and trigger the warping function. (warpBed)
+The init function serves to initalize all scoreboards and add all players to them.
 
 Notes:
 As of writing this, I can see it is possible to modify this code to 
